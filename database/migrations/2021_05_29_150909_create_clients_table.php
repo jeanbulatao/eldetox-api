@@ -22,10 +22,10 @@ class CreateClientsTable extends Migration
             $table->longText('uri');
             $table->string('uuid')->nullable();
             $table->string('manufacturer')->nullable();
-            $table->string('verion')->nullable();
+            $table->string('version')->nullable();
             $table->string('model')->nullable();
-            $table->string('serail')->nullable();
-            $table->string('platform');
+            $table->string('serial')->nullable();
+            $table->string('platform')->nullable();
             $table->timestamps();
         });
     }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9afd3d789bbe599855efecb795666197",
+    "content-hash": "518b1d653648f16da43466ced42b7925",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -682,6 +682,75 @@
             "time": "2020-04-28T08:47:37+00:00"
         },
         {
+            "name": "graham-campbell/manager",
+            "version": "v4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrahamCampbell/Laravel-Manager.git",
+                "reference": "e18c29f98adb770bd890b6d66b27ba4730272599"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Manager/zipball/e18c29f98adb770bd890b6d66b27ba4730272599",
+                "reference": "e18c29f98adb770bd890b6d66b27ba4730272599",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^5.5 || ^6.0 || ^7.0 || ^8.0",
+                "illuminate/support": "^5.5 || ^6.0 || ^7.0 || ^8.0",
+                "php": "^7.1.3 || ^8.0"
+            },
+            "require-dev": {
+                "graham-campbell/analyzer": "^2.4 || ^3.0",
+                "graham-campbell/testbench-core": "^3.2",
+                "mockery/mockery": "^1.3.1",
+                "phpunit/phpunit": "^6.5 || ^7.5 || ^8.4 || ^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GrahamCampbell\\Manager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
+                }
+            ],
+            "description": "Manager Provides Some Manager Functionality For Laravel",
+            "keywords": [
+                "Graham Campbell",
+                "GrahamCampbell",
+                "Laravel Manager",
+                "Laravel-Manager",
+                "connector",
+                "framework",
+                "interface",
+                "laravel",
+                "manager"
+            ],
+            "support": {
+                "issues": "https://github.com/GrahamCampbell/Laravel-Manager/issues",
+                "source": "https://github.com/GrahamCampbell/Laravel-Manager/tree/4.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/graham-campbell/manager",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-25T18:02:52+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.5.5",
             "source": {
@@ -883,22 +952,92 @@
             "time": "2021-04-26T09:17:50+00:00"
         },
         {
-            "name": "laminas/laminas-diactoros",
-            "version": "2.6.0",
+            "name": "hashids/hashids",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laminas/laminas-diactoros.git",
-                "reference": "7d2034110ae18afe05050b796a3ee4b3fe177876"
+                "url": "https://github.com/vinkla/hashids.git",
+                "reference": "8cab111f78e0bd9c76953b082919fc9e251761be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/7d2034110ae18afe05050b796a3ee4b3fe177876",
-                "reference": "7d2034110ae18afe05050b796a3ee4b3fe177876",
+                "url": "https://api.github.com/repos/vinkla/hashids/zipball/8cab111f78e0bd9c76953b082919fc9e251761be",
+                "reference": "8cab111f78e0bd9c76953b082919fc9e251761be",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0 || ^9.4",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "ext-bcmath": "Required to use BC Math arbitrary precision mathematics (*).",
+                "ext-gmp": "Required to use GNU multiple precision mathematics (*)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hashids\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Akimov",
+                    "email": "ivan@barreleye.com"
+                },
+                {
+                    "name": "Vincent Klaiber",
+                    "email": "hello@doubledip.se"
+                }
+            ],
+            "description": "Generate short, unique, non-sequential ids (like YouTube and Bitly) from numbers",
+            "homepage": "https://hashids.org/php",
+            "keywords": [
+                "bitly",
+                "decode",
+                "encode",
+                "hash",
+                "hashid",
+                "hashids",
+                "ids",
+                "obfuscate",
+                "youtube"
+            ],
+            "support": {
+                "issues": "https://github.com/vinkla/hashids/issues",
+                "source": "https://github.com/vinkla/hashids/tree/4.1.0"
+            },
+            "time": "2020-11-26T19:24:33+00:00"
+        },
+        {
+            "name": "laminas/laminas-diactoros",
+            "version": "2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-diactoros.git",
+                "reference": "36ef09b73e884135d2059cc498c938e90821bb57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/36ef09b73e884135d2059cc498c938e90821bb57",
+                "reference": "36ef09b73e884135d2059cc498c938e90821bb57",
                 "shasum": ""
             },
             "require": {
                 "laminas/laminas-zendframework-bridge": "^1.0",
-                "php": "^7.3 || ~8.0.0",
+                "php": "^7.1",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0"
             },
@@ -917,13 +1056,10 @@
                 "ext-dom": "*",
                 "ext-gd": "*",
                 "ext-libxml": "*",
-                "http-interop/http-factory-tests": "^0.8.0",
+                "http-interop/http-factory-tests": "^0.5.0",
                 "laminas/laminas-coding-standard": "~1.0.0",
-                "php-http/psr7-integration-tests": "^1.1",
-                "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^9.1",
-                "psalm/plugin-phpunit": "^0.14.0",
-                "vimeo/psalm": "^4.3"
+                "php-http/psr7-integration-tests": "^1.0",
+                "phpunit/phpunit": "^7.5.18"
             },
             "type": "library",
             "extra": {
@@ -982,30 +1118,28 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-05-18T14:41:54+00:00"
+            "time": "2020-09-03T14:29:41+00:00"
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.2.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32"
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6cccbddfcfc742eb02158d6137ca5687d92cee32",
-                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3 || ^8.0"
+                "php": "^5.6 || ^7.0 || ^8.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
-                "psalm/plugin-phpunit": "^0.15.1",
-                "squizlabs/php_codesniffer": "^3.5",
-                "vimeo/psalm": "^4.6"
+                "squizlabs/php_codesniffer": "^3.5"
             },
             "type": "library",
             "extra": {
@@ -1044,7 +1178,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-02-25T21:54:58+00:00"
+            "time": "2020-09-14T14:23:00+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1210,47 +1344,47 @@
         },
         {
             "name": "laravel/passport",
-            "version": "v8.5.0",
+            "version": "v9.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/passport.git",
-                "reference": "6affa6ed600c5f8909385fbae7cf6f8af3db2d39"
+                "reference": "011bd500e8ae3d459b692467880a49ff1ecd60c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/passport/zipball/6affa6ed600c5f8909385fbae7cf6f8af3db2d39",
-                "reference": "6affa6ed600c5f8909385fbae7cf6f8af3db2d39",
+                "url": "https://api.github.com/repos/laravel/passport/zipball/011bd500e8ae3d459b692467880a49ff1ecd60c0",
+                "reference": "011bd500e8ae3d459b692467880a49ff1ecd60c0",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "firebase/php-jwt": "^3.0|^4.0|^5.0",
-                "guzzlehttp/guzzle": "^6.0",
-                "illuminate/auth": "^6.0|^7.0",
-                "illuminate/console": "^6.0|^7.0",
-                "illuminate/container": "^6.0|^7.0",
-                "illuminate/contracts": "^6.0|^7.0",
-                "illuminate/cookie": "^6.0|^7.0",
-                "illuminate/database": "^6.0|^7.0",
-                "illuminate/encryption": "^6.0|^7.0",
-                "illuminate/http": "^6.0|^7.0",
-                "illuminate/support": "^6.0|^7.0",
+                "firebase/php-jwt": "^5.0",
+                "illuminate/auth": "^6.18.31|^7.22.4",
+                "illuminate/console": "^6.18.31|^7.22.4",
+                "illuminate/container": "^6.18.31|^7.22.4",
+                "illuminate/contracts": "^6.18.31|^7.22.4",
+                "illuminate/cookie": "^6.18.31|^7.22.4",
+                "illuminate/database": "^6.18.31|^7.22.4",
+                "illuminate/encryption": "^6.18.31|^7.22.4",
+                "illuminate/http": "^6.18.31|^7.22.4",
+                "illuminate/support": "^6.18.31|^7.22.4",
                 "laminas/laminas-diactoros": "^2.2",
-                "league/oauth2-server": "^8.0",
+                "lcobucci/jwt": "^3.4|^4.0",
+                "league/oauth2-server": "^8.2.3",
                 "nyholm/psr7": "^1.0",
-                "php": "^7.2",
+                "php": "^7.2|^8.0",
                 "phpseclib/phpseclib": "^2.0",
                 "symfony/psr-http-message-bridge": "^2.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.0",
                 "orchestra/testbench": "^4.4|^5.0",
-                "phpunit/phpunit": "^8.0"
+                "phpunit/phpunit": "^8.5|^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "8.x-dev"
+                    "dev-master": "9.x-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -1283,7 +1417,7 @@
                 "issues": "https://github.com/laravel/passport/issues",
                 "source": "https://github.com/laravel/passport"
             },
-            "time": "2020-05-05T14:25:53+00:00"
+            "time": "2020-12-04T09:37:12+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1354,109 +1488,49 @@
             "time": "2021-03-02T16:53:12+00:00"
         },
         {
-            "name": "lcobucci/clock",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lcobucci/clock.git",
-                "reference": "353d83fe2e6ae95745b16b3d911813df6a05bfb3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/clock/zipball/353d83fe2e6ae95745b16b3d911813df6a05bfb3",
-                "reference": "353d83fe2e6ae95745b16b3d911813df6a05bfb3",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4 || ^8.0"
-            },
-            "require-dev": {
-                "infection/infection": "^0.17",
-                "lcobucci/coding-standard": "^6.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-phpunit": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12",
-                "phpunit/php-code-coverage": "9.1.4",
-                "phpunit/phpunit": "9.3.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Lcobucci\\Clock\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Luís Cobucci",
-                    "email": "lcobucci@gmail.com"
-                }
-            ],
-            "description": "Yet another clock abstraction",
-            "support": {
-                "issues": "https://github.com/lcobucci/clock/issues",
-                "source": "https://github.com/lcobucci/clock/tree/2.0.x"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/lcobucci",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/lcobucci",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2020-08-27T18:56:02+00:00"
-        },
-        {
             "name": "lcobucci/jwt",
-            "version": "4.0.3",
+            "version": "3.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "ae4165a76848e070fdac691e773243d10cd06ce1"
+                "reference": "511629a54465e89a31d3d7e4cf0935feab8b14c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/ae4165a76848e070fdac691e773243d10cd06ce1",
-                "reference": "ae4165a76848e070fdac691e773243d10cd06ce1",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/511629a54465e89a31d3d7e4cf0935feab8b14c1",
+                "reference": "511629a54465e89a31d3d7e4cf0935feab8b14c1",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
-                "lcobucci/clock": "^2.0",
-                "php": "^7.4 || ^8.0"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "infection/infection": "^0.20",
-                "lcobucci/coding-standard": "^6.0",
-                "mikey179/vfsstream": "^1.6",
-                "phpbench/phpbench": "^0.17",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-phpunit": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12",
-                "phpunit/php-invoker": "^3.1",
-                "phpunit/phpunit": "^9.4"
+                "mikey179/vfsstream": "~1.5",
+                "phpmd/phpmd": "~2.2",
+                "phpunit/php-invoker": "~1.1",
+                "phpunit/phpunit": "^5.7 || ^7.3",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "suggest": {
+                "lcobucci/clock": "*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "Lcobucci\\JWT\\": "src"
-                }
+                },
+                "files": [
+                    "compat/class-aliases.php",
+                    "compat/json-exception-polyfill.php",
+                    "compat/lcobucci-clock-polyfill.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1464,7 +1538,7 @@
             ],
             "authors": [
                 {
-                    "name": "Luís Cobucci",
+                    "name": "Luís Otávio Cobucci Oblonczyk",
                     "email": "lcobucci@gmail.com",
                     "role": "Developer"
                 }
@@ -1476,7 +1550,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lcobucci/jwt/issues",
-                "source": "https://github.com/lcobucci/jwt/tree/4.0.3"
+                "source": "https://github.com/lcobucci/jwt/tree/3.4.5"
             },
             "funding": [
                 {
@@ -1488,7 +1562,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-03-23T23:47:22+00:00"
+            "time": "2021-02-16T09:40:01+00:00"
         },
         {
             "name": "league/commonmark",
@@ -5753,6 +5827,74 @@
             "time": "2020-03-10T18:35:08+00:00"
         },
         {
+            "name": "vinkla/hashids",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vinkla/laravel-hashids.git",
+                "reference": "ecf5534731dbd476e52859b3a6ab265f29ebade7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vinkla/laravel-hashids/zipball/ecf5534731dbd476e52859b3a6ab265f29ebade7",
+                "reference": "ecf5534731dbd476e52859b3a6ab265f29ebade7",
+                "shasum": ""
+            },
+            "require": {
+                "graham-campbell/manager": "^4.4",
+                "hashids/hashids": "^4.0",
+                "illuminate/contracts": "^7.0",
+                "illuminate/support": "^7.0",
+                "php": "^7.2.5"
+            },
+            "require-dev": {
+                "graham-campbell/analyzer": "^3.0",
+                "graham-campbell/testbench": "^5.4",
+                "mockery/mockery": "^1.3",
+                "phpunit/phpunit": "^8.5 || ^9.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.1-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Vinkla\\Hashids\\HashidsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Hashids": "Vinkla\\Hashids\\Facades\\Hashids"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vinkla\\Hashids\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Klaiber",
+                    "email": "hello@doubledip.se"
+                }
+            ],
+            "description": "A Hashids bridge for Laravel",
+            "keywords": [
+                "hashids",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/vinkla/laravel-hashids/issues",
+                "source": "https://github.com/vinkla/laravel-hashids/tree/master"
+            },
+            "time": "2020-03-10T08:21:07+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v4.2.0",
             "source": {
@@ -6042,27 +6184,28 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.9.0",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "e7db3b601ce742568b92648818ef903904d20164"
+                "reference": "2179568bdfddfa56c90c845a0be1a0b52adbf52a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/e7db3b601ce742568b92648818ef903904d20164",
-                "reference": "e7db3b601ce742568b92648818ef903904d20164",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/2179568bdfddfa56c90c845a0be1a0b52adbf52a",
+                "reference": "2179568bdfddfa56c90c845a0be1a0b52adbf52a",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "facade/flare-client-php": "^1.6",
-                "facade/ignition-contracts": "^1.0.2",
+                "facade/flare-client-php": "^1.0",
+                "facade/ignition-contracts": "^1.0",
                 "filp/whoops": "^2.4",
                 "illuminate/support": "^7.0|^8.0",
                 "monolog/monolog": "^2.0",
-                "php": "^7.2.5|^8.0",
+                "php": "^7.2.5",
+                "scrivo/highlight.php": "^9.15",
                 "symfony/console": "^5.0",
                 "symfony/var-dumper": "^5.0"
             },
@@ -6115,29 +6258,29 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
-            "time": "2021-05-05T06:45:12+00:00"
+            "time": "2021-03-08T13:56:01+00:00"
         },
         {
             "name": "facade/ignition-contracts",
-            "version": "1.0.2",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition-contracts.git",
-                "reference": "3c921a1cdba35b68a7f0ccffc6dffc1995b18267"
+                "reference": "aeab1ce8b68b188a43e81758e750151ad7da796b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition-contracts/zipball/3c921a1cdba35b68a7f0ccffc6dffc1995b18267",
-                "reference": "3c921a1cdba35b68a7f0ccffc6dffc1995b18267",
+                "url": "https://api.github.com/repos/facade/ignition-contracts/zipball/aeab1ce8b68b188a43e81758e750151ad7da796b",
+                "reference": "aeab1ce8b68b188a43e81758e750151ad7da796b",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3|^8.0"
+                "php": "^7.1"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^v2.15.8",
-                "phpunit/phpunit": "^9.3.11",
-                "vimeo/psalm": "^3.17.1"
+                "friendsofphp/php-cs-fixer": "^2.14",
+                "phpunit/phpunit": "^7.5|^8.0",
+                "vimeo/psalm": "^3.12"
             },
             "type": "library",
             "autoload": {
@@ -6166,9 +6309,9 @@
             ],
             "support": {
                 "issues": "https://github.com/facade/ignition-contracts/issues",
-                "source": "https://github.com/facade/ignition-contracts/tree/1.0.2"
+                "source": "https://github.com/facade/ignition-contracts/tree/1.0.1"
             },
-            "time": "2020-10-16T08:27:54+00:00"
+            "time": "2020-07-14T10:10:28+00:00"
         },
         {
             "name": "filp/whoops",
@@ -6349,33 +6492,30 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.4.3",
+            "version": "1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "d1339f64479af1bee0e82a0413813fe5345a54ea"
+                "reference": "31467aeb3ca3188158613322d66df81cedd86626"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/d1339f64479af1bee0e82a0413813fe5345a54ea",
-                "reference": "d1339f64479af1bee0e82a0413813fe5345a54ea",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/31467aeb3ca3188158613322d66df81cedd86626",
+                "reference": "31467aeb3ca3188158613322d66df81cedd86626",
                 "shasum": ""
             },
             "require": {
                 "hamcrest/hamcrest-php": "^2.0.1",
                 "lib-pcre": ">=7.0",
-                "php": "^7.3 || ^8.0"
-            },
-            "conflict": {
-                "phpunit/phpunit": "<8.0"
+                "php": ">=5.6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5 || ^9.3"
+                "phpunit/phpunit": "^5.7.10|^6.5|^7.5|^8.5|^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -6415,9 +6555,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mockery/mockery/issues",
-                "source": "https://github.com/mockery/mockery/tree/1.4.3"
+                "source": "https://github.com/mockery/mockery/tree/1.3.4"
             },
-            "time": "2021-02-24T09:51:49+00:00"
+            "time": "2021-02-24T09:51:00+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -7140,29 +7280,29 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "4.0.4",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "a853a0e183b9db7eed023d7933a858fa1c8d25a3"
+                "reference": "472b687829041c24b25f475e14c2f38a09edf1c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/a853a0e183b9db7eed023d7933a858fa1c8d25a3",
-                "reference": "a853a0e183b9db7eed023d7933a858fa1c8d25a3",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/472b687829041c24b25f475e14c2f38a09edf1c2",
+                "reference": "472b687829041c24b25f475e14c2f38a09edf1c2",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": "^7.3 || ^8.0"
+                "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.0"
+                "phpunit/phpunit": "^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -7187,7 +7327,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-token-stream/issues",
-                "source": "https://github.com/sebastianbergmann/php-token-stream/tree/master"
+                "source": "https://github.com/sebastianbergmann/php-token-stream/tree/3.1.2"
             },
             "funding": [
                 {
@@ -7196,7 +7336,7 @@
                 }
             ],
             "abandoned": true,
-            "time": "2020-08-04T08:28:15+00:00"
+            "time": "2020-11-30T08:38:46+00:00"
         },
         {
             "name": "phpunit/phpunit",
@@ -7294,6 +7434,82 @@
                 }
             ],
             "time": "2021-03-17T07:27:54+00:00"
+        },
+        {
+            "name": "scrivo/highlight.php",
+            "version": "v9.18.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scrivo/highlight.php.git",
+                "reference": "44a3d4136edb5ad8551590bf90f437db80b2d466"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/44a3d4136edb5ad8551590bf90f437db80b2d466",
+                "reference": "44a3d4136edb5ad8551590bf90f437db80b2d466",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5.7",
+                "sabberworm/php-css-parser": "^8.3",
+                "symfony/finder": "^2.8|^3.4",
+                "symfony/var-dumper": "^2.8|^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Highlight\\": "",
+                    "HighlightUtilities\\": ""
+                },
+                "files": [
+                    "HighlightUtilities/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Geert Bergman",
+                    "homepage": "http://www.scrivo.org/",
+                    "role": "Project Author"
+                },
+                {
+                    "name": "Vladimir Jimenez",
+                    "homepage": "https://allejo.io",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Martin Folkers",
+                    "homepage": "https://twobrain.io",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
+            "keywords": [
+                "code",
+                "highlight",
+                "highlight.js",
+                "highlight.php",
+                "syntax"
+            ],
+            "support": {
+                "issues": "https://github.com/scrivo/highlight.php/issues",
+                "source": "https://github.com/scrivo/highlight.php"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/allejo",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-12-22T19:20:29+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

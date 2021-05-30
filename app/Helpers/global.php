@@ -54,7 +54,7 @@ function saveClient()
     
     $location = geoip()->getLocation(geoip()->getClientIP());
     $location = (array)$location['attributes'];
-    $client = new \App\Models\Client;
+    $client = new \App\Model\Client;
     $client->user_id = $user_id;
     $client->selected_current_iso = session('iso');
     $client->app_origin = session('origin');
@@ -67,4 +67,20 @@ function saveClient()
     $client->location = json_encode($location);
     $client->uri = request()->getRequestUri();
     $client->save();
+}
+
+function encode($id, $connection = 'main')
+{
+    $config = config('hashids.connections.' . $connection);
+    return (new \Hashids\Hashids($config['salt'], $config['length'], $config['alphabet']))->encode($id);
+}
+
+function decode($hash, $connection = 'main')
+{
+    $config = config('hashids.connections.' . $connection);
+    $decoded = (new \Hashids\Hashids($config['salt'], $config['length'], $config['alphabet']))->decode($hash);
+    if (count($decoded) > 0) {
+        return $decoded[0];
+    }
+    return null;
 }
